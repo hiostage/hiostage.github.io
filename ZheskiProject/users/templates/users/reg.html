@@ -1,0 +1,20 @@
+{% extends 'users/class.html' %}
+{% block title %} Регистрация {% endblock %}
+{% block titleForm %}
+<h1 class="FormRegistration_title">Регистрация</h1>
+{% endblock %}
+{% block FormRegistration_Data %}
+<div class="FormRegistration_Data_Information">
+<div class="FormRegistration_Data_UserName" id="FormRegistration_Data-Form">Имя Пользователя:</div> 
+<div class="FormRegistration_Data_Mail" id="FormRegistration_Data-Form">Эл. Почта:</div>
+<p class="FormRegistration_Data_Password" id="FormRegistration_Data-Form">Пароль:</p>
+<p class="FormRegistration_Data_Password-Replay" id="FormRegistration_Data-Form">Повтор пароля:</p>
+</div>
+<div class="FormRegistration_Data_Input">
+<input type="text" class="FormRegistration_Data_UserName_Input" id="">
+<input type="text" class="FormRegistration_Data_Mail_Input" id="FormRegistration_Data-Form_Input">
+<input type="text" class="FormRegistration_Data_Password_Input" id="FormRegistration_Data-Form_Input">
+<input type="text" class="FormRegistration_Data_Password-Replay_Input" id="FormRegistration_Data-Form_Input">
+</div>
+<div class="FormRegistration_Data_Account_True"><a href="{% url 'authorization' %}">Есть аккаунт?</a></div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+    <div class="mainSection">
+        <div class="nav">
+            <a class="nav_title" href="#" >Twitter</a>
+            <ul class="navColumn">
+                <li class="navColumn-item"><a href="">News</a></li>
+                <li class="navColumn-item"><a href="">Explorer</a></li>
+                <li class="navColumn-item"><a href="">Notifications</a></li>
+                <li class="navColumn-item"><a href="">Messages</a></li>
+                <li class="navColumn-item"><a href="">Settings</a></li>
+                <li class="navColumn-item"><a href="">Profile</a></li>
+                <li class="navColumn-item"><a href="">More</a></li>
+                <li class="navColumn-item"><button class="createPostButton">+</li>
+            </ul>
+            <div class="navProfile">
+                <img class="navProfile-img" src="" alt="#">
+                <div class="navProfile-nameColumn">
+                    <div class="navProfile-nameColumn_upper">Dmitriy</div>
+                    <div class="navProfile-nameColumn_lower">#Dmitriy</div>
+                </div>
+                <button class="navProfile-button">&#8230;</button>
+
+            </div>
+            <div class="rightBlock"></div>
+        </div>
+        {% block body %}
+        {% endblock %}
+        
+    </div>
+</body>
+</html>
